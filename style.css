@@ -1,16 +1,55 @@
 body{
     background-color: aliceblue;
 }
-
-img{
-    width: 200px;
-    border-radius: 50%;
+header{
+    display: flex;
 }
-a{
-    background-color: blue;
+h1.logo{
+    flex:1;
+    margin-left: 50px;
+}
+ul.nav{
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+}
+li.nav-item{
+    margin: 10px;
+    list-style: none;
+}
+li.nav-item.project{
+    background: black;
     color: white;
     padding: 10px;
-    margin-top: 20px;
-    display: block;
-    width: max-content;
+    border-radius: 10px;
+}
+section.intro{
+    display: flex;
+    margin-left: 100px;
+    height: calc(100vh - 90px   ) ;
+    align-items: center;
+}
+img{
+    height: 500px;
+    border-radius: 20px;
+}
+h1.title{
+    font-size: 42px;
+}
+div.sect-right{
+    margin-left: 100px;
+}
+section.about{
+    margin-left: 100px;
+    display: flex;
+    height: 70vh;
+    gap: 50px;
+    
+}
+div.about-left{
+    flex: 2;
+   
+}
+ul.about-right{
+    flex: 1;
 }
