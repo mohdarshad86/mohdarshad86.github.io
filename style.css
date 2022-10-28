@@ -126,6 +126,10 @@ footer p{
 .contacts h2{
     text-align: center;
 }
+.contacts a{
+    color: black;
+    
+}
 .contacts-wrapper{
     display: flex;
     column-gap: 30px;
