@@ -1,5 +1,6 @@
 body{
     background-color: aliceblue;
+    margin: 0;
 }
 header{
     display: flex;
@@ -52,4 +53,52 @@ div.about-left{
 }
 ul.about-right{
     flex: 1;
+}
+
+section.projects{
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 70vh;
+
+}
+.projects h2{
+text-align: center;
+}
+div.projects-items{
+    display: flex;
+    column-gap: 20px;
+
+}
+.project{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px grey;
+}
+h2{
+    font-size: 32px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+footer p{
+    margin: 0;
+}
+.contacts{
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 70vh;
+}
+.contacts h2{
+    text-align: center;
+}
+.contacts-wrapper{
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-around;
 }
