@@ -1,9 +1,16 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: aliceblue;
     margin: 0;
 }
 header{
     display: flex;
+    position: fixed;
+    background-color: aliceblue;
+    left: 0;
+    right: 0;
 }
 h1.logo{
     flex:1;
@@ -18,6 +25,13 @@ li.nav-item{
     margin: 10px;
     list-style: none;
 }
+.nav-item a{
+    color: black;
+    text-decoration: none;
+}
+.nav-item.project a{
+    color: white;
+}
 li.nav-item.project{
     background: black;
     color: white;
@@ -27,12 +41,24 @@ li.nav-item.project{
 section.intro{
     display: flex;
     margin-left: 100px;
-    height: calc(100vh - 90px   ) ;
+    min-height: calc(100vh - 90px   ) ;
     align-items: center;
+    padding-top: 90px;
 }
 img{
     height: 500px;
     border-radius: 20px;
+}
+.intro .social{
+    display: flex;
+    list-style: none;
+}
+.social li{
+    margin: 10px;
+
+}
+.social a{
+    font-size: 36px;
 }
 h1.title{
     font-size: 42px;
@@ -41,24 +67,25 @@ div.sect-right{
     margin-left: 100px;
 }
 section.about{
+    padding-top: 100px;
     margin-left: 100px;
     display: flex;
-    height: 70vh;
+    min-height: 70vh;
     gap: 50px;
     
 }
 div.about-left{
     flex: 2;
-   
 }
 ul.about-right{
     flex: 1;
 }
 
 section.projects{
+    padding-top: 100px;
     margin-left: 100px;
     margin-right: 100px;
-    height: 70vh;
+    min-height: 70vh;
 
 }
 .projects h2{
@@ -66,7 +93,7 @@ text-align: center;
 }
 div.projects-items{
     display: flex;
-    column-gap: 20px;
+    gap: 20px;
 
 }
 .project{
@@ -90,9 +117,10 @@ footer p{
     margin: 0;
 }
 .contacts{
+    padding-top: 100px;
     margin-left: 100px;
     margin-right: 100px;
-    height: 70vh;
+    min-height: 70vh;
 }
 .contacts h2{
     text-align: center;
@@ -101,4 +129,42 @@ footer p{
     display: flex;
     column-gap: 30px;
     justify-content: space-around;
+}
+
+@media (max-width: 720px){
+    header{
+        flex-direction: column;
+    }
+    header .nav{
+        margin: 0 10px;
+        padding: 0;
+    }
+    header h1.logo{
+        margin: 10px;
+    }
+    img {
+        height: 200px;
+    }
+    section.intro{
+        padding-top: 130px;
+    }
+    section.intro, section.about{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    div.about-left{
+        flex: unset;
+    }
+    section.projects, section.contacts{
+        
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .projects-items, .contacts-wrapper{
+        flex-direction: column;
+    }
+    div.sect-right{
+        margin-left: 10px;
+    }
+
 }
