@@ -24,6 +24,7 @@ ul.nav{
 li.nav-item{
     margin: 10px;
     list-style: none;
+    white-space: nowrap;
 }
 .nav-item a{
     color: black;
